@@ -44,6 +44,11 @@
             key-positions = <11 12 13>;
             bindings = <&tog TVP1>;
         };
+
+        combo_clmk {
+            bindings = <&tog 6>;
+            key-positions = <16 17 18>;
+        };
     };
 
     macros {
@@ -85,10 +90,10 @@
             //                                     ┗━━━━━━━━━━━┻━━━━━━━━━━━┻━━━━━━━━━━━┛   ┗━━━━━━━━━━━┻━━━━━━━━━━━┻━━━━━━━━━━━┛
 
             bindings = <
-         &kp Q       &kp W       &kp F             &kp P        &kp B      &kp J      &kp L        &kp U          &kp Y       &kp SEMI
-         &mt LGUI A  &mt LALT R  &mt LCTRL S       &mt LSHFT T  &kp G      &kp M      &mt RSHFT N  &mt RCTRL E    &mt RALT I  &mt RGUI O
-&kp ESC  &kp Z       &kp X       &kp C             &kp D        &kp V      &kp K      &kp H        &kp COMMA      &kp DOT     &kp FSLH    &kp BACKSPACE
-                                 &kp LEFT_CONTROL  &lt NAV TAB  &kp RET    &kp SPACE  &lt SYM ESC  &kp RIGHT_ALT
+         &kp Q       &kp W       &kp F             &kp P        &kp B        &kp J      &kp L        &kp U          &kp Y       &kp SEMI
+         &mt LGUI A  &mt LALT R  &mt LCTRL S       &mt LSHFT T  &kp G        &kp M      &mt RSHFT N  &mt RCTRL E    &mt RALT I  &mt RGUI O
+&kp ESC  &kp Z       &kp X       &kp C             &kp D        &kp V        &kp K      &kp H        &kp COMMA      &kp DOT     &kp FSLH    &kp BSPC
+                                 &kp LEFT_CONTROL  &lt NAV TAB  &kp ENTER    &kp SPACE  &lt SYM ESC  &kp RIGHT_ALT
             >;
         };
 
@@ -219,6 +224,15 @@
         &trans       &kp LS(LEFT)  &kp LC(F17)   &kp LS(RIGHT)  &kp RET        &trans  &kp F4  &kp F5  &kp F6  &kp F11
 &trans  &kp J        &kp LS(C)     &kp LC(F16)   &kp LS(V)      &kp LC(F15)    &trans  &kp F1  &kp F2  &kp F3  &kp F10  &trans
                                    &trans        &kp LC(F12)    &kp LC(F11)    &trans  &trans  &trans
+            >;
+        };
+
+        colemak {
+            bindings = <
+         &kp Q           &kp W           &kp F             &kp P               &kp B        &kp J      &kp L                &kp U              &kp Y            &kp SEMI
+         &mt LEFT_GUI A  &mt LEFT_ALT R  &mt LEFT_SHIFT S  &mt LEFT_CONTROL T  &kp G        &kp M      &mt RIGHT_CONTROL N  &mt RIGHT_SHIFT E  &mt RIGHT_ALT I  &mt RIGHT_GUI O
+&kp ESC  &kp Z           &kp X           &kp C             &kp D               &kp V        &kp K      &kp M                &kp COMMA          &kp DOT          &kp FSLH         &kp BSPC
+                                         &kp LCTRL         &lt 1 TAB           &kp ENTER    &kp SPACE  &lt 2 ESC            &kp RALT
             >;
         };
     };
